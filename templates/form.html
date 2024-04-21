@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block body %}
+  <br>
+  <br>
+  <br>
+<div class="container m-4 w-25 p-4 mx-auto">
+        <div class="shadows-sm">
+            <form method="POST" action="/form">
+              {% csrf_token %}
+
+
+              <div class="form-outline mb-4">
+                    <input type="file" id="file" class="form-control" name="file" placeholder="Upload"/>
+                    <br>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+
+                <!-- Text input -->
+                <div class="form-outline mb-4">
+                    <input type="text" id="name" class="form-control" name="name" placeholder="Enter Your Name" required/>
+                    <label class="form-label" for="name">Name</label>
+                </div>
+
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                    <input type="email" id="email" class="form-control" name="email" placeholder="Enter your email" required />
+                    <label class="form-label" for="email">Email</label>
+                </div>
+
+                <!-- Number input -->
+                <div class="form-outline mb-4">
+                    <input type="number" id="phone" class="form-control" name="phone" placeholder="Phone Number" required/>
+                    <label class="form-label" for="phone">Phone</label>
+                </div>
+
+               <!-- Experience -->
+                <div class="form-outline mb-4">
+                  <textarea type="text" id="experience" class="form-control"  name="experience" placeholder="SDE 2 years" required></textarea>
+                    <label class="form-label" for="experience">Experience</label>
+                </div>
+
+               <!-- Education -->
+                <div class="form-outline mb-4">
+                  <textarea type="text" id="education" class="form-control" name="education" placeholder="BE CSE" required></textarea>
+                    <label class="form-label" for="education">Education</label>
+                </div>
+
+               <!-- Skills -->
+                <div class="form-outline mb-4">
+                  <textarea type="text" id="skills" class="form-control" name="skills" placeholder="C++,React,Django" required></textarea>
+                    <label class="form-label" for="skills">Skills</label>
+                </div>
+
+                <!-- same for leetcode , linkedin, github, projects -->
+                <div class="form-outline mb-4">
+                    <input type="text" id="projects" class="form-control" name="projects" placeholder="Enter your projects" required />
+                    <label class="form-label
+                    " for="projects">Projects</label>
+                </div>
+                
+                <div class="form-outline mb-4">
+                    <input type="text" id="linkedin" class="form-control" name="linkedin" placeholder="Enter your linkedin" required />
+                    <label class="form-label mb-4" for="linkedin">Linkedin</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                    <input type="text" id="leetcode" class="form-control" name="leetcode" placeholder="Enter your leetcode" required />
+                    <label class="form-label" for="leetcode">Leetcode</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                    <input type="text" id="github" class="form-control" name="github" placeholder="Enter your github" required />
+                    <label class="form-label mb-4" for="github">Github</label>
+                </div>
+
+              <button type="submit" class="btn btn-primary">Generate</button>
+            </form>
+
+        </div>
+</div>
+{% endblock %}

@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+
+<!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1>An easy way to generate your profile</h1>
+          <h2>Automatically generate your profile using this Web app</h2>
+          <div>
+            <a href="#about" class="btn-get-started scrollto">Sign Up</a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img">
+          <img src="../static/assets/img/hero-img.svg" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row justify-content-between">
+          <div class="col-lg-5 d-flex align-items-center justify-content-center about-img">
+            <img src="../static/assets/img/about-img.svg" class="img-fluid aos-init aos-animate" alt="" data-aos="zoom-in">
+          </div>
+          <div class="col-lg-6 pt-5 pt-lg-0">
+            <h3 data-aos="fade-up" class="aos-init aos-animate">About us</h3>
+            <p data-aos="fade-up" data-aos-delay="100" class="aos-init aos-animate">
+              "Welcome to ProfileGen, the ultimate solution for quickly and easily creating professional profiles. Our team of experts has developed an app that uses cutting-edge technology to automatically generate high-quality profiles for job seekers, entrepreneurs, and anyone looking to enhance their online presence.
+ProfileGen is designed to save you time and hassle by automatically pulling information from your resume and social media accounts, and using it to create a polished and comprehensive profile.
+            </p>
+            <div class="row">
+              <div class="col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                <i class="bx bx-receipt"></i>
+                <h4>Fast</h4>
+                <p>So why waste time creating a profile from scratch? Download ProfileGen today and let us do the hard work for you!"</p>
+              </div>
+              <div class="col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                <i class="bx bx-cube-alt"></i>
+                <h4>Secure</h4>
+                <p>We understand the importance of privacy and security, which is why we have implemented strict measures to protect your information. You can trust that your data is safe with us.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+  <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Features</h2>
+          <p>Check out the great features we offer</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4 class="title"><a href="">Convinient</a></h4>
+              <p class="description">Automatically pulling data from various sources such as resumes, social media profiles, and job applications to create employee profiles.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4 class="title"><a href="">Advance</a></h4>
+              <p class="description">Incorporating machine learning algorithms</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4 class="title"><a href="">Fast</a></h4>
+              <p class="description">Excepteur sin  t occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="400">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4 class="title"><a href="">Secure</a></h4>
+              <p class="description">Implementing security and access controls to ensure that employee data is kept confidential and only accessible by authorized personnel.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+{% endblock %}
